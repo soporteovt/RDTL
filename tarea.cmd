@@ -57,6 +57,7 @@
 @echo [TAREAS REMOTAS] Fin
 @echo [TAREAS REMOTAS] Fin >> %fichero_log%
 @EXIT /B %ERRORLEVEL%
+@GOTO SALIDA
 
 :: Envio de Datos generico a zabbix
 :: Los datos se envian con nombre generico
@@ -83,3 +84,6 @@
 @ECHO [ZABBIX SEND HOSTNAME] %1 >> %fichero_log%
 @call %CARPETA_ZABBIX%\scripts\Envio_Zabbix_Hostname.cmd %1
 @EXIT /B 0
+
+:: Salida del Script
+:SALIDA
