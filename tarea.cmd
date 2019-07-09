@@ -52,6 +52,7 @@
 :: Comienza la ejecucion de las tareas
 @echo [TAREAS REMOTAS]
 @echo [TAREAS REMOTAS] >> %fichero_log%
+@echo [TAREAS REMOTAS] FUNCIONAAAAAAAAAAAAA ....... >> %fichero_log%
 @CALL :SendZabbixDataHostname %COMPUTERNAME%_%HORA_EJECUCION%_Ejecutadas_Tareas_Remotas
 @echo [TAREAS REMOTAS] Fin
 @echo [TAREAS REMOTAS] Fin >> %fichero_log%
