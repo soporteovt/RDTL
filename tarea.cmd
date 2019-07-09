@@ -55,6 +55,7 @@
 @CALL :SendZabbixDataHostname %COMPUTERNAME%_%HORA_EJECUCION%_Ejecutadas_Tareas_Remotas
 @echo [TAREAS REMOTAS] Fin
 @echo [TAREAS REMOTAS] Fin >> %fichero_log%
+@EXIT /B %ERRORLEVEL%
 
 :: Envio de Datos generico a zabbix
 :: Los datos se envian con nombre generico
